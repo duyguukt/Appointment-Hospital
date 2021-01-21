@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">Booking</string>
+    <string name="Home">Home</string>
+    <string name="lblTitle">Login Form</string>
+    <string name="login">Login</string>
+    <string name="username">Username</string>
+    <string name="enter_email_address">Enter email address</string>
+    <string name="password">Password</string>
+    <string name="enter_password">Enter Password</string>
+
+    <string name="title_activity_login">LoginActivity</string>
+    <string name="todo">TODO</string>
+    <string name="create_new_account_signup">Create New account ? Signup</string>
+    <string-array name="doctor_name">
+        <item>Select doctor</item>
+        <item>Dr.</item>
+        <item>Dr.</item>
+        <item>Dr.</item>
+        <item>Dr.</item>
+    </string-array>
+
+    <string-array name="city_name">
+        <item>Select City</item>
+        <item>istanbul.</item>
+        <item>izmir.</item>
+        <item>Ankara.</item>
+        <item>Bursa.</item>
+    </string-array>
+</resources>

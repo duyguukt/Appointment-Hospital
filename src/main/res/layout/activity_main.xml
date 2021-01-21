@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/buttonDateSec"
+        android:layout_width="52dp"
+        android:layout_height="44dp"
+        android:layout_marginStart="16dp"
+        android:background="@drawable/round_bg"
+        android:text="..."
+        app:layout_constraintBottom_toBottomOf="@+id/editTextDate"
+        app:layout_constraintStart_toEndOf="@+id/editTextDate"
+        app:layout_constraintTop_toTopOf="@+id/editTextDate"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:text="Appointment System "
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/editTextDate"
+        android:layout_width="222dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="88dp"
+        android:ems="10"
+        android:hint="Date"
+        android:inputType="date"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.264"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+    <Button
+        android:id="@+id/buttonTimeSec"
+        android:layout_width="52dp"
+        android:layout_height="44dp"
+        android:layout_marginStart="16dp"
+        android:background="@drawable/round_bg"
+        android:text="..."
+        app:layout_constraintBottom_toBottomOf="@+id/editTextTime"
+        app:layout_constraintStart_toEndOf="@+id/editTextTime"
+        app:layout_constraintTop_toTopOf="@+id/editTextTime" />
+
+    <EditText
+        android:id="@+id/editTextTime"
+        android:layout_width="0dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="32dp"
+        android:ems="10"
+        android:hint="Time"
+        android:inputType="time"
+        app:layout_constraintEnd_toEndOf="@+id/editTextDate"
+        app:layout_constraintStart_toStartOf="@+id/editTextDate"
+        app:layout_constraintTop_toBottomOf="@+id/editTextDate" />
+    <LinearLayout
+        android:id="@+id/linearLayout6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="2dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginBottom="350dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/txtDoctor"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+    </LinearLayout>
+
+    <Spinner
+        android:id="@+id/doctor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginBottom="305dp"
+        android:layout_weight="1"
+        android:entries="@array/doctor_name"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/txtDoctor"
+        app:layout_constraintTop_toBottomOf="@+id/txtDoctor" />
+
+    <TextView
+        android:id="@+id/txtDoctor"
+        android:layout_width="253dp"
+        android:layout_height="31dp"
+        android:layout_marginBottom="22dp"
+        android:layout_weight="1"
+        android:fontFamily="serif"
+        android:text="Please Select Doctor Name"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/doctor"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.316"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout6" />
+
+    <Button
+        android:id="@+id/buttonAppointment"
+        android:layout_width="0dp"
+        android:layout_height="42dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="212dp"
+        android:background="@drawable/round_bg"
+        android:fontFamily="serif"
+        android:text="Appointment"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTime"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/textViewAdi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="TextView"
+        app:layout_constraintEnd_toEndOf="@+id/textView2"
+        app:layout_constraintStart_toStartOf="@+id/textView2"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonAppointment"
+        app:srcCompat="@drawable/image" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
